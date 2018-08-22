@@ -45,9 +45,29 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Source\Common\Singleton.cs" />
+    <Compile Include="Source\Servers\ServerMasterLoader.cs" />
+    <Compile Include="Source\Types\Enums\ServerType.cs" />
+    <Compile Include="Source\Utils\Logger.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Source\Base\" />
+    <Folder Include="Source\Common\IO\" />
+    <Folder Include="Source\Common\Memory\" />
+    <Folder Include="Source\Common\Thread\" />
+    <Folder Include="Source\Data\" />
+    <Folder Include="Source\Entities\" />
+    <Folder Include="Source\Framework\" />
+    <Folder Include="Source\Gameplay\Auction\" />
+    <Folder Include="Source\Network\" />
+    <Folder Include="Source\Servers\Game\" />
+    <Folder Include="Source\Servers\Global\" />
+    <Folder Include="Source\Servers\Login\" />
+    <Folder Include="Source\Servers\Map\" />
+    <Folder Include="Test\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

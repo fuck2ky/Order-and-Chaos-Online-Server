@@ -1,15 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MMORPG.Source.Servers;
 
 namespace MMORPG
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
+            using (var server = new ServerMasterLoader())
+            {
+                server.Init(args);
+                server.Run(args);
+                server.Finish();
+            }
         }
     }
 }
