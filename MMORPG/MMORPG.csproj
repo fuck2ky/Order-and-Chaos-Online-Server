@@ -45,16 +45,25 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Source\Base\Exceptions\GException.cs" />
+    <Compile Include="Source\Base\Exceptions\RunTimeException.cs" />
     <Compile Include="Source\Common\Singleton.cs" />
+    <Compile Include="Source\Common\SingletonThreaded.cs" />
+    <Compile Include="Source\Servers\ServerMaster.cs" />
     <Compile Include="Source\Servers\ServerMasterLoader.cs" />
+    <Compile Include="Source\System\Mutex.cs" />
+    <Compile Include="Source\System\Thread.cs" />
+    <Compile Include="Source\System\ThreadPool.cs" />
+    <Compile Include="Source\Types\Enums\Errors\GErrorCode.cs" />
     <Compile Include="Source\Types\Enums\ServerType.cs" />
+    <Compile Include="Source\Types\Enums\ThreadState.cs" />
+    <Compile Include="Source\Utils\Config.cs" />
     <Compile Include="Source\Utils\Logger.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Source\Base\" />
     <Folder Include="Source\Common\IO\" />
     <Folder Include="Source\Common\Memory\" />
     <Folder Include="Source\Common\Thread\" />

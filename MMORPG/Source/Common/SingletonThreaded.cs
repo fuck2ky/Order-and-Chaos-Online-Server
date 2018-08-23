@@ -1,9 +1,9 @@
-﻿using MMORPG.Source.Utils;
+﻿using MMORPG.Source.System;
 using System;
 
 namespace MMORPG.Source.Common
 {
-    public abstract class Singleton<T> : IDisposable where T: new()
+    public abstract class SingletonThreaded<T> : Thread, IDisposable where T : new()
     {
         protected static T _instance;
 
@@ -22,7 +22,7 @@ namespace MMORPG.Source.Common
 
         public void Dispose()
         {
-            
+
         }
     }
 }
